@@ -5,6 +5,7 @@
     <title>Kya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="my_script.js"></script>
   </head>
   <body>
     <div id="content">
@@ -45,7 +46,10 @@
       <img src="/images/Rotunda.jpg" width="500" height="400"/>
       <img src="/images/uva.jpg" width="500" height="400"/>
 
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to see content created by server code:</p>
+      <button onclink="showHelloWorld()">Hello</button>
+      <div id="my-container"></div>
+      
       <p>Click here to find out random facts about me:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
