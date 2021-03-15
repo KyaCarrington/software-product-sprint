@@ -31,7 +31,6 @@ async function showtheMessage(){
     const responseFromServer = await fetch('/hello');
     const myObject = await responseFromServer.json();
     const randomFact = myObject[Math.floor(Math.random()*myObject.length)];
-
     const helloWorldContainer = document.getElementById('hello-world-container');
-    helloWorldContainer.innertext = randomFact;
+    helloWorldContainer.innertext = randomFact; //this line doesn't seem to be executing on my page for some reason 
 }
