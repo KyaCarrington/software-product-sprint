@@ -3,5 +3,5 @@ async function showHelloWorld() {
   const textFromResponse = await responseFromServer.text();
   const myContainer = document.getElementById('my-container');
   myContainer.innerText = textFromResponse;
-  
+
 }

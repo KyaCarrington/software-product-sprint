@@ -10,7 +10,8 @@
   <body>
     <div id="content">
       <h1 style="background-color:DodgerBlue;">Kya's Portfolio</h1>
-  
+        <form action="/form-handler" method="POST">
+            
       <p1 style="background-color:  cyan;">
         Welcome to my portfolio! My name is Kya 
           Carrington and I'm a second year
@@ -24,6 +25,7 @@
     </p>
       
       
+  
     <p style="background-color:cyan;">
          Here is my 
         LinkedIn in case you
@@ -46,13 +48,13 @@
       <img src="/images/Rotunda.jpg" width="500" height="400"/>
       <img src="/images/uva.jpg" width="500" height="400"/>
 
-      <p>Click here to see content created by server code:</p>
-      <button onclink="showHelloWorld()">Hello</button>
-      <div id="my-container"></div>
-      
-      <p>Click here to find out random facts about me:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <p>Click <a href="/hello">here</a> or the button bellow to see content created by server code. </p>
+      <button onclink="showtheMessage()">Show Message</button>
+      <div id="hello-world-container"></div>
+      <p>Click the button below to find out random facts about me:</p>
+      <button onclick="addRandomGreeting()">Random Fact</button>
       <div id="greeting-container"></div>
     </div>
   </body>
+  
 </html>
