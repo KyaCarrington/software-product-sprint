@@ -9,6 +9,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+
 @WebServlet("/form-handler")
 public class FormHandlerServlet extends HttpServlet {
 
@@ -19,7 +21,7 @@ public class FormHandlerServlet extends HttpServlet {
     long timestamp = System.currentTimeMillis();
     
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Text");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
     
     FullEntity taskEntity =
     Entity.newBuilder(keyFactory.newKey())
@@ -31,5 +33,5 @@ public class FormHandlerServlet extends HttpServlet {
     response.sendRedirect("/index.html");
 }
 
-
 }
+
