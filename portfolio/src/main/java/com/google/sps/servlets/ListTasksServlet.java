@@ -15,6 +15,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.google.cloud.datastore.StructuredQuery.CompositeFilter;
+import com.google.cloud.datastore.StructuredQuery.PropertyFilter;
 
 @WebServlet("/list")
 public class ListTasksServlet extends HttpServlet {
@@ -22,8 +24,14 @@ public class ListTasksServlet extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+   //String name2 = request.getParameter("name");
+  // String email2 = request.getParameter("email");
+  // String message2 = request.getParameter("message");
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("Task").setOrderBy(OrderBy.desc("timestamp")).build();
+       // Query.newEntityQueryBuilder().setKind("Task").setOrderBy(OrderBy.desc("timestamp")).build();
+      // Query.newEntityQueryBuilder().setKind("Task").setFilter(CompositeFilter.and(PropertyFilter.eq("name", name2), PropertyFilter.eq("email", email2)))
+       //.setOrderBy(OrderBy.desc("name")).build();
+       Query.newEntityQueryBuilder().setKind("Task").setOrderBy(OrderBy.desc("name")).build();
     QueryResults<Entity> results = datastore.run(query);
 
     List<Task> tasks = new ArrayList<>();
@@ -31,10 +39,12 @@ public class ListTasksServlet extends HttpServlet {
       Entity entity = results.next();
 
       long id = entity.getKey().getId();
-      String textValue = entity.getString("text-input");
-      long timestamp = entity.getLong("timestamp");
+      String name = entity.getString("name");
+      String email = entity.getString("email");
+      String message = entity.getString("message");
+      //long timestamp = entity.getLong("timestamp");
 
-      Task task = new Task(id, textValue, timestamp);
+      Task task = new Task(id, name, email, message);
       tasks.add(task);
     }
 

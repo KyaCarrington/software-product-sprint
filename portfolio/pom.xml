@@ -45,6 +45,13 @@
       <version>${jetty.version}</version>
     </dependency>
   
+  <!-- JSoup -->
+    <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.13.1</version>
+    </dependency>
+
    <!--Gson-->
     <dependency>
   <groupId>com.google.code.gson</groupId>
