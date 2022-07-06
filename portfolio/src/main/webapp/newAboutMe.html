@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Kya Carrington</title>
     <!----CSS link----->
-    <link rel="stylesheet" href="titleCssPage.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="script.js"></script>
+    <script src="my_script.js"></script>
 </head>
 <body>
     <div class="hero">
@@ -19,11 +21,19 @@
             <img src="/images/uva.jpg" class="logo">
         </nav>
         <div class="content">
-            <span class="title">Student at the University of Virginia</span>
-            <h1>Hello, I’m <span>Kya</span></h1>
-            <p>Weclome to my profile! I’m a rising fourth year at the University of Virginia interested in full time positions in Software Engineering or Cyber Security. Click on the links above to learn more about me.</p>
-            <a href="/images/Kya_Carrington_Updated_Resume_2022.pdf" class="btn">Download My Resume</a>
-        </div>
+            <h1>About Me</h1>
+            <p>
+              
+                Hello! My name is Kya Carrington and I live in the DC Metro Area. I'm currently 
+                a fourth year at the University of Virginia majoring in Computer Science. 
+                In my spare time, I enjoy working out, watching basketball games, baking, painting, and spending time with friends. 
+            </p> 
+       
+        <p>Click <a href="/hello">here</a> to see content created by server code. </p>
+        <p>Click the button below to find out random facts about me:</p>
+        <button onclick="addRandomGreeting()">Random Fact</button>
+        <div id="greeting-container"></div>
+    </div>
     </div>
     <hr>
         <section id="footer">
