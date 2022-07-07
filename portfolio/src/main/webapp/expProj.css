@@ -10,10 +10,11 @@ a{
 }
 .hero{
     width: 100%;
-    height: 100vh;
-    /*background: black; */
+    height: 250vh;
     background: black;
     background-size: cover;
+    /*text-align: center;*/
+    
 }
 nav{
     display: flex;
@@ -71,13 +72,16 @@ nav ul li a:hover:after{
 }
 .content{
     position: absolute;
+    color: #47abfd;
+    /*text-align: center;*/
     top: 35%;
     left: 8%;
 }
 .content .title{
-    color: #ffffff;
+    color: #47abfd;
     font-size: 15px;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 4px;
     display: inline-block;
     margin-bottom: 20px;
@@ -95,16 +99,25 @@ nav ul li a:hover:after{
 }
 .content h1 span{
     color: #47abfd;
+    
 }
 .content p{
     width: 55%;
-    color: #ffffff;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    color: #47abfd;
+    
+    margin-top: 25px; 
+    /*
+    margin-bottom: 30px; */
+    /*text-align: center;*/
+}
+
+body{
+    background-color: #47abfd;;
+    color: #47abfd;
 }
 
 #footer {
-    /*background-color:rgb(5, 5, 5); */
+    /* background-color:rgb(5, 5, 5); */
     background-color: #47abfd;
     font-size: medium;
     color: white;
@@ -126,37 +139,53 @@ nav ul li a:hover:after{
     align-items: center;
     text-align: center;
     text-emphasis-color: white;
+    color: white;
 }
 
+.center{
+    display:block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+/*
+h1 {
+    color: #47abfd;
+  }
+
+p {
+    color:white;
+}
+*/
 a:any-link {
     color:white;
  }
 
-img2 {
-    opacity: 0.5;
-  }
-  
-img2:hover {
-    opacity: 1.0;
+ #greeting-container {
+    margin-top: 20px;
   }
 
-.headshot{
-    padding: 5px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 400px;
-    width: auto;
+button{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #47abfd;
+    border: 2px solid #47abfd;
 }
-
+button:hover{
+    background: transparent;
+    border-color: #47abfd;
+    color: #47abfd;
+}
 
 #icons{
     max-height: 30px;
     max-width: 30px;
-}
-
-body{
-    background-color: #47abfd;;
-    color: #47abfd;
 }
