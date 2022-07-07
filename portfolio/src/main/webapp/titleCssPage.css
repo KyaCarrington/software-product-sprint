@@ -160,3 +160,25 @@ body{
     background-color: #47abfd;;
     color: #47abfd;
 }
+
+/* #div1 {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    line-height: 300px;
+    text-align: right;
+  }
+#div1 img {
+    vertical-align: middle;
+  }
+  */
+
+#hp  {
+    float: right;    
+     margin: 0 0 0 15px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_rounded_images.asp */
+img {
+    border-radius: 50%;
+  }
