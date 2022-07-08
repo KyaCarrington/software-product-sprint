@@ -24,6 +24,7 @@ nav{
 }
 .logo{
     max-height: 60px;
+    border-radius: 50%;
 }
 nav ul li{
     list-style: none;
@@ -189,3 +190,10 @@ button:hover{
     max-height: 30px;
     max-width: 30px;
 }
+
+.GLOW{
+    box-shadow: 0 0 100px rgb(16, 175, 214); 
+}
+img {
+    border-radius: 50%;
+  }
