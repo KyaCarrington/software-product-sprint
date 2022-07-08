@@ -186,3 +186,6 @@ img {
 .GLOW{
     box-shadow: 0 0 100px rgb(16, 175, 214); 
 }
+#thanks{
+    text-align: center;
+}

@@ -17,9 +17,11 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['I have only been coding for four years!', 'My favorite TV show is New Girl', 'I used to play volleyball', 
+      ['I have only been coding for four years!', 'My favorite TV show is New Girl', 'I played volleyball for 6 years', 
       'My favorite color is blue','I love going to sporting events','I enjoy baking','I have two siblings',
-    'I work at PWC this summer','I am familiar with VSCode','I created this website with Google Cloud Shell'];
+    'I work at PWC this summer','I am familiar with VSCode','I created this website with Google Cloud Shell',
+    'I have created 4 websites','I enjoy CyberSecurity','My favorite programming language is Python','My favorite food is shrimp'
+    ];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
